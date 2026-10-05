@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso de privacidad · Kobri</title>
+<meta name="description" content="Qué datos guarda Kobri, qué no guarda, dónde se guardan y cómo borrarlos.">
+<style>
+  :root {
+    --fondo: #FBFAF8;
+    --texto: #1A1A1A;
+    --suave: #5A5A5A;
+    --marca: #1F6F5C;
+    --linea: #E3E0DA;
+    --caja: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #14110F;
+      --texto: #F2F0EC;
+      --suave: #A8A49D;
+      --marca: #6FC3AA;
+      --linea: #2E2A26;
+      --caja: #1D1A17;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { padding: 48px 0 8px; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--linea);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p, li { color: var(--texto); }
+  .meta { color: var(--suave); font-size: 0.95rem; margin: 0; }
+  .lead { color: var(--suave); }
+  ul { padding-left: 20px; }
+  li { margin: 8px 0; }
+  strong { font-weight: 600; }
+  .caja {
+    background: var(--caja);
+    border: 1px solid var(--linea);
+    border-radius: 12px;
+    padding: 20px 20px 20px 24px;
+    margin: 20px 0;
+  }
+  .caja ul { margin: 0; }
+  .nunca { border-left: 4px solid var(--marca); }
+  a { color: var(--marca); }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--linea);
+    color: var(--suave);
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Aviso de privacidad de Kobri</h1>
+    <p class="meta">Última actualización: 5 de octubre de 2026</p>
+  </header>
+
+  <p class="lead">
+    Kobri es una aplicación para llevar cuentas de dinero entre personas: lo que
+    te deben, lo que debes, dinero ajeno que pasa por tus cuentas, tandas, cobros
+    recurrentes y tus propios gastos. Este aviso explica qué guarda, qué no
+    guarda, dónde está y cómo borrarlo.
+  </p>
+
+  <h2>Qué datos guarda</h2>
+  <div class="caja">
+    <ul>
+      <li>
+        <strong>Tu cuenta.</strong> Tu correo electrónico y, si lo pones, tu
+        nombre. Si entras con Google, Kobri recibe de Google tu correo y tu
+        nombre, nada más.
+      </li>
+      <li>
+        <strong>Las personas que registras.</strong> El nombre que tú escribes y,
+        si lo añades, la relación («mamá», «vecino»). Son datos de otras personas
+        que tú decides anotar: no se les pide nada ni se les contacta.
+      </li>
+      <li>
+        <strong>Tu dinero.</strong> Montos, fechas, conceptos, categorías y las
+        notas que escribas de cada deuda, abono, gasto, cuota o compromiso.
+      </li>
+      <li>
+        <strong>Tus cuentas y medios de pago.</strong> El nombre que les des, el
+        banco, el tipo (efectivo, débito, crédito) y, si quieres,
+        <strong>los últimos cuatro dígitos</strong> de la tarjeta.
+      </li>
+    </ul>
+  </div>
+
+  <h2>Qué NO guarda, nunca</h2>
+  <div class="caja nunca">
+    <ul>
+      <li>El número completo de ninguna tarjeta.</li>
+      <li>El código de seguridad (CVV).</li>
+      <li>El PIN de ninguna tarjeta.</li>
+      <li>Contraseñas de banca en línea.</li>
+      <li>Tu ubicación, tus contactos del teléfono, tus mensajes ni tus fotos.</li>
+    </ul>
+  </div>
+  <p>
+    Esto no es una promesa: la base de datos <em>no acepta</em> más de cuatro
+    dígitos en ese campo, y no existe ningún otro lugar donde pudieran
+    guardarse. Los últimos cuatro dígitos sirven para que distingas una tarjeta
+    de otra, y no sirven para cobrar nada.
+  </p>
+
+  <h2>Sin publicidad y sin analítica</h2>
+  <p>
+    Kobri no muestra publicidad, no incluye rastreadores y no manda tu actividad
+    a ninguna empresa de análisis. No se vende ni se comparte tu información con
+    nadie para fines comerciales, en ningún caso.
+  </p>
+
+  <h2>Dónde se guardan</h2>
+  <p>
+    En servidores de <strong>Supabase</strong> (infraestructura de Amazon Web
+    Services en Estados Unidos), que es el proveedor que aloja la base de datos y
+    el inicio de sesión. La información viaja cifrada entre tu teléfono y el
+    servidor.
+  </p>
+  <p>
+    Cada cuenta solo puede leer sus propios datos. Eso lo impone la base de
+    datos, no la aplicación: aunque alguien extrajera las claves de la app, no
+    podría ver la información de otra persona.
+  </p>
+
+  <h2>Con quién se comparte</h2>
+  <p>Con nadie, salvo los proveedores necesarios para que la app funcione:</p>
+  <div class="caja">
+    <ul>
+      <li><strong>Supabase</strong> — alojamiento de la base de datos y del inicio de sesión.</li>
+      <li><strong>Google</strong> — solo si eliges entrar con Google.</li>
+      <li><strong>Expo (EAS)</strong> — entrega las actualizaciones de la aplicación. No recibe tus datos financieros.</li>
+      <li><strong>Google Play</strong> — si compraste la app, gestiona el pago. Kobri no recibe ni guarda tus datos de pago.</li>
+    </ul>
+  </div>
+
+  <h2>Qué se queda solo en tu teléfono</h2>
+  <p>
+    Los recordatorios los programa tu propio teléfono y no pasan por ningún
+    servidor. La preferencia de pedir tu huella al abrir la app, y los ajustes de
+    los avisos, también se guardan únicamente en el dispositivo.
+  </p>
+
+  <h2>Cuánto tiempo se conservan</h2>
+  <p>
+    Mientras tengas la cuenta. Kobri está hecha para no borrar registros
+    financieros por su cuenta: un movimiento equivocado se corrige o se reversa,
+    y queda constancia de la corrección. Eso es para que tus cuentas sean
+    verificables, y significa que el historial se conserva hasta que tú pidas
+    borrarlo.
+  </p>
+
+  <h2>Cómo borrar tus datos</h2>
+  <p>
+    <strong>Desde la app:</strong> en <em>Ajustes → Borrar todos mis datos</em>.
+    Borra todas tus personas, deudas, movimientos, cuentas, tandas, cobros y
+    gastos. Pide confirmación escrita porque no se puede deshacer.
+  </p>
+  <p>
+    <strong>Para borrar la cuenta completa</strong>, incluido el correo con el que
+    entras, escribe a la dirección de contacto de abajo. Se elimina en un plazo
+    máximo de 30 días y se te confirma por correo.
+  </p>
+  <p>
+    Antes de borrar nada puedes <strong>exportar toda tu información</strong>
+    desde <em>Ajustes</em>, en un archivo que se abre en Excel y en otro que
+    sirve para restaurarla.
+  </p>
+
+  <h2>Menores de edad</h2>
+  <p>
+    Kobri no está dirigida a menores de 13 años y no recoge datos de ellos a
+    sabiendas.
+  </p>
+
+  <h2>Cambios en este aviso</h2>
+  <p>
+    Si cambia, se actualiza la fecha del encabezado. Si el cambio afecta a cómo
+    se usan tus datos, se avisa dentro de la aplicación.
+  </p>
+
+  <h2>Contacto</h2>
+  <div class="caja">
+    <p style="margin:0">
+      <a href="mailto:dubagamessoporte@gmail.com">dubagamessoporte@gmail.com</a>
+    </p>
+  </div>
+  <p>
+    Escribe a esa dirección para dudas sobre privacidad, para pedir una copia de
+    tu información, o para pedir que se borre tu cuenta completa.
+  </p>
+
+  <footer>
+    Kobri · aviso de privacidad · 5 de octubre de 2026
+  </footer>
+</main>
+</body>
+</html>
